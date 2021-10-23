@@ -1,0 +1,61 @@
+{
+  "name": "protractor-typescript-cucumber",
+  "version": "4.0.0",
+  "license": "MIT",
+  "description": "To demostrate protractor cucumber tests for angular/non angular apps with allure report framework",
+  "homepage": "/protractor-cucumber-typescript",
+  "keywords": [
+    "protractor",
+    "cucumber",
+    "typescript",
+    "angular",
+    "angularjs",
+    "testing",
+    "behaviour driven development",
+    "bdd",
+    "selenium",
+    "webdriverJS",
+    "gherkin",
+    "automation testing"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf typeScript/",
+    "clean-build": "npm run clean && npm run build",
+    "init-contributors": "all-contributors init",
+    "add-contributors": "all-contributors add",
+    "generate-contributors": "all-contributors generate",
+    "test": "tsc && protractor typeScript/config/config.js",
+    "webdriver-update": "webdriver-manager update",
+    "webdriver": "webdriver-manager start"
+  },
+  "author": "Vikas Chhabra",
+  "devDependencies": {
+    "@types/cucumber": "^4.0.4",
+    "@types/node": "^10.17.28",
+    "@types/selenium-webdriver": "^3.0.10",
+    "all-contributors-cli": "^6.1.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.0.3",
+    "cucumber-html-reporter": "^4.0.3",
+    "mkdirp": "^0.5.1",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.1.1",
+    "rimraf": "^2.6.2",
+    "selenium-standalone": "^6.18.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^4.1"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "@cucumber/cucumber": "^7.3.1",
+    "chromedriver": "^84.0.1",
+    "pretty": "^2.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "standalone": "0.0.1",
+    "webdriver": "^6.3.5",
+    "webdriver-manager": "^12.1.7"
+  }
+}
